@@ -1,37 +1,91 @@
 # jamie.metcalf.solutions — Robots & Content Signals Policy
-# Fully permissive indexing, search, AI input, and AI training
+# Public portfolio root (/) is permissive; private /hedged/ pre-publication portal is strictly disallowed.
 
 User-agent: *
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
-# AI Search & LLM Crawlers (Explicitly Permitted)
+# AI Search, LLM & Scraper Crawlers (Public root allowed; /hedged/ strictly disallowed)
 User-agent: GPTBot
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: OAI-SearchBot
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: ChatGPT-User
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: ClaudeBot
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: Claude-Web
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: anthropic-ai
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: PerplexityBot
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: Google-Extended
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: Applebot-Extended
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
 
 User-agent: CCBot
+Disallow: /hedged/
+Disallow: /hedged
 Allow: /
+
+User-agent: Bytespider
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: Meta-ExternalAgent
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: Amazonbot
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: cohere-ai
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: Diffbot
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: Scrapy
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: AhrefsBot
+Disallow: /hedged/
+Disallow: /hedged
+
+User-agent: SemrushBot
+Disallow: /hedged/
+Disallow: /hedged

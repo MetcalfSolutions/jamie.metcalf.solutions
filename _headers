@@ -6,3 +6,19 @@
 
 /.well-known/api-catalog
   Content-Type: application/linkset+json
+
+/hedged
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai
+  Cache-Control: private, no-store, max-age=0
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: interest-cohort=()
+
+/hedged/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, noai, noimageai
+  Cache-Control: private, no-store, max-age=0
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: interest-cohort=()
