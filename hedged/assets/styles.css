@@ -1002,3 +1002,110 @@ a:hover { text-decoration: underline; }
   .main-content { padding: 1.5rem 1.15rem 3rem; }
   .hero h1 { font-size: 1.85rem; }
 }
+
+
+/* v2 3-Track Consensus Extensions */
+.track-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.track-chip {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.86rem;
+}
+
+.track-chip strong {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.agree-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.16rem 0.52rem;
+  border-radius: 5px;
+}
+
+.agree-3 { background: #dff0e5; color: #1b5134; border: 1px solid #a8d4b7; }
+.agree-2 { background: var(--copper-soft); color: #8c4d19; border: 1px solid #e7c9ac; }
+.agree-1 { background: var(--bg-muted); color: var(--ink-muted); border: 1px solid var(--border-strong); }
+.agree-obj { background: var(--danger-soft); color: var(--danger); border: 1px solid #e7bab6; }
+
+.outlier-drawer {
+  margin-top: 1.25rem;
+  background: #f6f2e8;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.outlier-drawer summary {
+  padding: 0.85rem 1.15rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outlier-drawer summary::-webkit-details-marker { display: none; }
+.outlier-drawer-body { padding: 0 1rem 1rem; display: flex; flex-direction: column; gap: 0.65rem; }
+
+.model-switcher {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  background: var(--bg-muted);
+  padding: 0.3rem;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
+  border: 1px solid var(--border);
+}
+
+.model-switch-btn {
+  border: none;
+  background: transparent;
+  padding: 0.38rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.model-switch-btn.active {
+  background: var(--bg-sidebar);
+  color: #fff;
+}
+
+.track-score-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.track-mini {
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.14rem 0.45rem;
+  font-weight: 600;
+}
